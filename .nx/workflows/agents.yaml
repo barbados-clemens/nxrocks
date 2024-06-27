@@ -19,7 +19,7 @@ launch-templates:
       - name: Restore Maven/Gradle/SDKMan Cache
         uses: 'nrwl/nx-cloud-workflows/v4/workflow-steps/cache/main.yaml'
         inputs:
-          key: '**/pom.xml|**/build.gradle|**/build.gradle.kts|**/settings.gradle|**/settings.gradle.kts'
+          key: '**/pom.xml|**/build.gradle|**/build.gradle.kts|**/settings.gradle|**/settings.gradle.kts|"v1"'
           paths: |
             ../.m2/repository
             ../.gradle/caches
@@ -29,7 +29,7 @@ launch-templates:
       - name: Restore Flutter Cache
         uses: 'nrwl/nx-cloud-workflows/v4/workflow-steps/cache/main.yaml'
         inputs:
-          key: '"flutter-sdk"|**/pubspec.yaml'
+          key: '"flutter-sdk"|**/pubspec.yaml|"v1"'
           paths: |
             ../flutter
             ../.pub-cache
@@ -38,7 +38,7 @@ launch-templates:
       - name: Restore Android Cache
         uses: 'nrwl/nx-cloud-workflows/v4/workflow-steps/cache/main.yaml'
         inputs:
-          key: '"android-sdk"'
+          key: '"android-sdk"|"v1"'
           paths: |
             ../android/sdk
           base-branch: 'develop'
