@@ -68,7 +68,6 @@
       }
     }
   },
-  "nxCloudAccessToken": "ZDRmZDczZWUtMDU2My00YzQ0LTlkMWEtZjM2YjZlZWNmNGIxfHJlYWQ=",
   "parallel": 1,
   "plugins": [
     {
@@ -93,5 +92,7 @@
     ],
     "sharedGlobals": ["{workspaceRoot}/.nx/workflows/**/**"]
   },
-  "defaultBase": "develop"
+  "defaultBase": "develop",
+  "nxCloudAccessToken": "NzcyZjgzOTYtMDIwMC00OGNjLWE2OTEtMWY2Y2Q1NGNmZGNifHJlYWQtd3JpdGU=",
+  "nxCloudUrl": "https://staging.nx.app"
 }
